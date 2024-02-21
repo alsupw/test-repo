@@ -18,10 +18,4 @@ locals {
     log_min_duration_statement = { value = "1500" },
     work_mem                   = { value = "262144" },
   }
-  database_allow_rules = {
-    wardells_laptop = {
-        description = "Wardells laptop"
-        cidr_blocks = ["100.0.0.90/32"]
-    }
-  }
 }
